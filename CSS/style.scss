@@ -1,0 +1,251 @@
+/* variables */
+$hr-color: rgb(102, 102, 102);
+$in-blk: inline-block;
+$blk: block;
+$wht: rgb(255, 255, 255);
+$rgt: right;
+$width: 245px;
+$mgn: 0 auto;
+
+/* mixins */
+@mixin hr {
+   /* chrome */
+   border-color: $hr-color;
+   /* IE7+ */
+   color: $hr-color;
+   /* firefox & opera */
+   background-color: $hr-color;
+   margin: $mgn;
+}
+
+@mixin pinbar {
+   background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/* main */
+
+body {
+   margin: $mgn;
+   overflow: hidden;
+   box-sizing: border-box;
+}
+
+hr {
+   @include hr;
+}
+
+/* pinbar */
+
+#pinbar {
+   height: 5vh;
+   @include pinbar;
+}
+
+.fa-windows {
+   margin: 0 4px;
+}
+
+#end-feature {
+   float: $rgt;
+   display: $in-blk;
+   border-radius: 2px;
+   height: 100%;
+   width: 8px;
+   background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.date-display {
+   display: $blk;
+   font-size: 8px;
+   padding: 2px 0;
+   margin: 1px 7px;
+}
+
+.date-feature {
+   float: $rgt;
+   color: #fff;
+   padding: 2px;
+}
+
+#date-hour {
+   text-align: center;
+}
+
+.icons-display {
+    margin: 0.5vh 0.5vh;
+}
+
+/* pulpit */
+
+#pulpit {
+   height: 94.5vh;
+   background: url(../IMG/wallpaper.jpg) center center no-repeat;
+}
+
+.icon-img {
+   width: 27px;
+}
+
+.icon-text {
+   color: $wht;
+   font-size: 8px;
+   display: $blk;
+   text-align: center;
+}
+
+.icon {
+   padding: 10px;
+   display: inline-block;
+}
+
+#icons {
+   width: 60px;
+   display: $in-blk;
+}
+
+/* widget */
+
+#toolbar {
+   float: $rgt;
+   width: 253px;
+   height: 100%;
+   display: $in-blk;
+}
+
+#toolbar-menu {
+   background: #333;
+   width: $width;
+   position:absolute;
+   bottom: 7vh;
+   
+}
+
+#toolbar-border {
+   background: rgba(84, 84, 84, 0.7);
+   height: 18px;
+}
+
+#toolbar-nav > i::before, .date-feature > i::before {
+   font-size: 10px; 
+   color: $wht;
+}
+
+#toolbar-nav {
+   background: rgb(238, 238, 238);
+   border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.name-text {
+   display: $in-blk;
+   width: 110px;
+   margin: 5px 5px 0 5px;
+}
+
+#toolbar-features {
+   float: $rgt;
+}
+
+.fa-power-off:before {
+   line-height: 30px;
+   margin: 2px;
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    margin-right: 5px;
+}
+
+#icon-start-stop {
+   height: 25px;
+   display: $in-blk;
+   padding: 2px;
+}
+
+#logo {
+   height: 25px;
+}
+
+.target-feature {
+   width: $width;
+   background: $wht;
+   height: 46px;
+   border-bottom: 1px solid rgb(232, 232, 232);
+   
+   &:nth-child(2n){
+      background: rgb(242, 242, 242);
+   }
+}
+
+.fa-clock-o:before {
+   margin: 7px;
+   line-height: 46px;
+}
+
+.clock-icon {
+   display: $in-blk;
+}
+
+.hours {
+   font-size: 11px;
+   line-height: 4px;
+}
+
+.icons-nav {
+   float: $rgt;
+}
+
+#empty-target-feature {
+   width: $width;
+   height: 60px;
+   background: $wht;
+}
+
+#end-target-feature {
+   width: $width;
+   height: 30px;
+   background: rgb(238, 238, 238);
+}
+
+#end-line {
+   font-size: 10px;
+   line-height: 30px;
+   margin: 0 10px;
+}
+
+.inside-text {
+   margin: 0 10px;
+}
+
+#btn-new {
+   background: rgb(51, 170, 82);
+   color: $wht;
+   border: none;
+   height: 20px;
+   width: 64px;
+   font-size: 10px;
+   float: $rgt;
+   margin: 5px;
+   box-shadow: 1px 1px 2px #888888;
+   cursor: pointer;
+}
+
+.btn-nav {
+   background: rgb(69, 69, 69);
+   border: none;
+   float: right;
+   margin: 1px;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+}
+
+.info-icons {
+   margin: 0 2px;
+}
+
+.tools {
+   margin: 0 4px;
+   font-size: 12px;
+   line-height: 35px;
+}
+

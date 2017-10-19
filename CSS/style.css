@@ -1,0 +1,194 @@
+/* variables */
+/* mixins */
+/* main */
+body {
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box; }
+
+hr {
+  /* chrome */
+  border-color: #666666;
+  /* IE7+ */
+  color: #666666;
+  /* firefox & opera */
+  background-color: #666666;
+  margin: 0 auto; }
+
+/* pinbar */
+#pinbar {
+  height: 5vh;
+  background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.fa-windows {
+  margin: 0 4px; }
+
+#end-feature {
+  float: right;
+  display: inline-block;
+  border-radius: 2px;
+  height: 100%;
+  width: 8px;
+  background: linear-gradient(rgba(102, 102, 102, 0.7), rgba(0, 0, 0, 0.7)); }
+
+.date-display {
+  display: block;
+  font-size: 8px;
+  padding: 2px 0;
+  margin: 1px 7px; }
+
+.date-feature {
+  float: right;
+  color: #fff;
+  padding: 2px; }
+
+#date-hour {
+  text-align: center; }
+
+.icons-display {
+  margin: 0.5vh 0.5vh; }
+
+/* pulpit */
+#pulpit {
+  height: 94.5vh;
+  background: url(../IMG/wallpaper.jpg) center center no-repeat; }
+
+.icon-img {
+  width: 27px; }
+
+.icon-text {
+  color: white;
+  font-size: 8px;
+  display: block;
+  text-align: center; }
+
+.icon {
+  padding: 10px;
+  display: inline-block; }
+
+#icons {
+  width: 60px;
+  display: inline-block; }
+
+/* widget */
+#toolbar {
+  float: right;
+  width: 253px;
+  height: 100%;
+  display: inline-block; }
+
+#toolbar-menu {
+  background: #333;
+  width: 245px;
+  position: absolute;
+  bottom: 7vh; }
+
+#toolbar-border {
+  background: rgba(84, 84, 84, 0.7);
+  height: 18px; }
+
+#toolbar-nav > i::before, .date-feature > i::before {
+  font-size: 10px;
+  color: white; }
+
+#toolbar-nav {
+  background: #eeeeee;
+  border-bottom: 1px solid #dddddd; }
+
+.name-text {
+  display: inline-block;
+  width: 110px;
+  margin: 5px 5px 0 5px; }
+
+#toolbar-features {
+  float: right; }
+
+.fa-power-off:before {
+  line-height: 30px;
+  margin: 2px; }
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  margin-right: 5px; }
+
+#icon-start-stop {
+  height: 25px;
+  display: inline-block;
+  padding: 2px; }
+
+#logo {
+  height: 25px; }
+
+.target-feature {
+  width: 245px;
+  background: white;
+  height: 46px;
+  border-bottom: 1px solid #e8e8e8; }
+  .target-feature:nth-child(2n) {
+    background: #f2f2f2; }
+
+.fa-clock-o:before {
+  margin: 7px;
+  line-height: 46px; }
+
+.clock-icon {
+  display: inline-block; }
+
+.hours {
+  font-size: 11px;
+  line-height: 4px; }
+
+.icons-nav {
+  float: right; }
+
+#empty-target-feature {
+  width: 245px;
+  height: 60px;
+  background: white; }
+
+#end-target-feature {
+  width: 245px;
+  height: 30px;
+  background: #eeeeee; }
+
+#end-line {
+  font-size: 10px;
+  line-height: 30px;
+  margin: 0 10px; }
+
+.inside-text {
+  margin: 0 10px; }
+
+#btn-new {
+  background: #33aa52;
+  color: white;
+  border: none;
+  height: 20px;
+  width: 64px;
+  font-size: 10px;
+  float: right;
+  margin: 5px;
+  box-shadow: 1px 1px 2px #888888;
+  cursor: pointer; }
+
+.btn-nav {
+  background: #454545;
+  border: none;
+  float: right;
+  margin: 1px;
+  color: white;
+  cursor: pointer; }
+
+.info-icons {
+  margin: 0 2px; }
+
+.tools {
+  margin: 0 4px;
+  font-size: 12px;
+  line-height: 35px; }
+
+/*# sourceMappingURL=style.css.map */
